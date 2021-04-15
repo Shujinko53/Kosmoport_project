@@ -1,0 +1,20 @@
+@import 'base/variables';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/info';
+@import 'blocks/about';
+@import 'blocks/shops';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+* {
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
