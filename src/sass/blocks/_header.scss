@@ -20,8 +20,6 @@
 	&__info {
 		width: 220px;
 
-		text-align: left;
-		font-weight: 400;
 		font-size: 12px;
 		line-height: 20px;
 		color: #3e3e3e;
@@ -60,11 +58,11 @@
 
 	&__social {
 		display: flex;
+		justify-content: flex-end;
 		align-items: center;
 		flex-wrap: wrap;
 		width: 220px;
 
-		font-weight: 400;
 		font-size: 12px;
 		line-height: 16px;
 		color: #3e3e3e;
@@ -81,6 +79,8 @@
 			margin-top: 3px;
 
 			border-radius: 100%;
+
+			transition: 0.3s all;
 
 			&:not(:last-child) {
                 margin-right: 10px; 
