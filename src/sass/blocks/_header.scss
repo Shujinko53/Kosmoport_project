@@ -1,5 +1,5 @@
 .header {
-	padding: 10px 0;
+	padding: 20px 0;
 
 	background-color: #fff;
 
@@ -10,7 +10,7 @@
 	}
 
 	&__logo {
-		width: 350px;
+		width: 300px;
 
 		img {
 			width: 100%;
@@ -18,45 +18,60 @@
 	}
 
 	&__info {
+		width: 220px;
+
 		text-align: left;
 		font-weight: 400;
 		font-size: 12px;
-		line-height: 14px;
+		line-height: 20px;
 		color: #3e3e3e;
 
 		&-wrapper {
-			margin-top: 5px;
+			display: flex;
+			flex-wrap: wrap;
 		}
 
 		&-link, &-phone { 
-			padding: 3px 5px 3px 0;
+			padding: 4px 12px 4px 0;
 
 			font-size: 12px;
-			line-height: 14px;
+			line-height: 20px;
 			text-decoration: none;
 			color: #3e3e3e;
+			
+			transition: 0.5s all;
 
 			&:hover, &:active {
 				color: #d72935;
 			}
+		}
 
-			&:not(:last-child) {
-				border-right: 1px solid #3e3e3e;
-			}
+		&-link {
+			border-right: 1px solid #3e3e3e;
+		}
+
+		&-phone {
+			padding: 4px 0 4px 10px;
+
+			border-right: 0;
 		}
 
 	}
 
 	&__social {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		width: 200px;
+		flex-wrap: wrap;
+		width: 220px;
 
 		font-weight: 400;
 		font-size: 12px;
-		line-height: 14px;
+		line-height: 16px;
 		color: #3e3e3e;
+
+		span {
+			margin-right: 10px;
+		}
 
 		&-item {
 			display: flex;
@@ -64,6 +79,12 @@
 			align-items: center;
 			width: 42px;
 			height: 42px;
+
+			border-radius: 100%;
+
+			&:not(:last-child) {
+                margin-right: 10px; 
+            }
 		}
 	}
 }
