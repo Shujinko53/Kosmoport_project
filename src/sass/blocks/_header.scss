@@ -71,11 +71,18 @@
 			margin-right: 10px;
 		}
 
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+
 		&-item {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			width: 42px;
+			height: 42px;
 			margin-top: 3px;
 
 			border-radius: 100%;
@@ -88,6 +95,10 @@
 
 			&:hover {
 				box-shadow: 0px 0px 10px 0 #69040b;
+			}
+
+			img {
+				width: 100%;
 			}
 		}
 	}
