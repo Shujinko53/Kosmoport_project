@@ -1,0 +1,41 @@
+.info {
+    padding: 50px 0;
+
+    background-color: #efeae4;
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 140px;
+
+        &-img {
+            width: 55px;
+            height: 55px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-descr {
+            margin: 25px 0 0;
+
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            color: #3e3e3e;
+        }
+    }
+}

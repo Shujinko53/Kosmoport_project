@@ -18,9 +18,9 @@
 	}
 
 	&__info {
-		width: 220px;
+		width: 245px;
 
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 20px;
 		color: #3e3e3e;
 
@@ -30,9 +30,9 @@
 		}
 
 		&-link, &-phone { 
-			padding: 4px 12px 4px 0;
+			padding: 4px 14px 4px 0;
 
-			font-size: 12px;
+			font-size: 14px;
 			line-height: 20px;
 			text-decoration: none;
 			color: #3e3e3e;
@@ -63,8 +63,8 @@
 		flex-wrap: wrap;
 		width: 220px;
 
-		font-size: 12px;
-		line-height: 16px;
+		font-size: 14px;
+		line-height: 20px;
 		color: #3e3e3e;
 
 		span {

@@ -39,6 +39,30 @@
         }
     }
 
+    .info {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140px;
+            margin-bottom: 15px;
+    
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+    
+            &-descr {
+                margin: 25px 0 0;
+    
+                text-align: center;
+                font-size: 16px;
+                line-height: 22px;
+                color: #3e3e3e;
+            }
+        }
+    }
+
     .footer {
         &__logo {
             width: 230px;
