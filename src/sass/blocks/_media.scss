@@ -93,6 +93,20 @@
         }
     }
 
+    .about {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__container {
+            width: 100%;
+
+            &:nth-child(2) {
+                margin-top: 15px;
+            }
+        }
+    }
+
     .footer {
         padding: 40px 0 70px 0;
 
@@ -132,6 +146,12 @@
                 height: 26px;
                 margin-top: 0;
             }
+        }
+    }
+
+    .about {
+        &__container {
+            padding: 0 10px;
         }
     }
 
