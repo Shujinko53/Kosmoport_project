@@ -16,10 +16,12 @@
     
         &__info {
             max-width: 210px;
+
+            font-size: 12px;
     
             &-link, &-phone {
                 padding: 3px 6px 3px 0;
-                color: #3e3e3e;
+                font-size: 12px;
             }
 
             &-phone {
@@ -31,11 +33,20 @@
         &__social { 
             justify-content: flex-end;
             width: 190px;
+
+            font-size: 12px;
     
             &-item {
                 width: 36px;
                 height: 36px;
             }
+        }
+    }
+
+    .nav {
+        &__link {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 
@@ -48,16 +59,16 @@
             margin-bottom: 15px;
     
             &-img {
-                width: 50px;
-                height: 50px;
+                width: 45px;
+                height: 45px;
             }
     
             &-descr {
                 margin: 25px 0 0;
     
                 text-align: center;
-                font-size: 16px;
-                line-height: 22px;
+                font-size: 14px;
+                line-height: 20px;
                 color: #3e3e3e;
             }
         }
@@ -87,14 +98,10 @@
         &__info {
             max-width: 210px;
 
-            text-align: center; 
+            text-align: center;
 
             &-wrapper {
                 justify-content: center;
-            }
-    
-            &-link, &-phone {
-                color: #3e3e3e;
             }
     
         }
@@ -117,6 +124,13 @@
         }
     }
 
+    .nav {
+        &__link {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
     .about {
         &__wrapper {
             flex-direction: column;
@@ -127,6 +141,17 @@
 
             &:nth-child(2) {
                 margin-top: 15px;
+            }
+        }
+    }
+
+    .contacts {
+        &__form {
+            width: 540px;
+    
+            &-wrapper {
+                grid-template: repeat(3, 50px) 130px/ repeat(2, 260px);
+                column-gap: 20px;
             }
         }
     }
@@ -147,6 +172,16 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%; 
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .divider {
+        width: 55px;
+        height: 5px;
     }
 
     .header {
@@ -173,9 +208,64 @@
         }
     }
 
+    .nav {
+        .container {
+            width: unset;
+        }
+        
+        &__link {
+            font-size: 12px;
+        }
+    }
+
+    .info {
+        &__item {
+            &-img {
+                width: 40px;
+                height: 40px;
+            }
+
+            &-descr {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
     .about {
         &__container {
             padding: 0 10px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .contacts {
+        padding: 30px 0;
+    
+        &__form {
+            width: 100%;
+            margin: 30px auto 0 auto;
+    
+            &-wrapper {
+                grid-template: repeat(4, 50px) 130px/ 1fr;
+                justify-content: center;
+                row-gap: 15px;
+                column-gap: unset;
+            }
+        }
+    
+        &__input-name,
+        &__input-select,
+        &__input-textarea {
+            grid-column: 1;
+        }
+        
+        .button_submit {
+            margin-top: 30px;
         }
     }
 

@@ -1,0 +1,48 @@
+.contacts {
+    padding: 50px 0;
+
+    &__form {
+        width: 585px;
+        margin: 40px auto 0 auto;
+
+        &-wrapper {
+            display: grid;
+            grid-template: repeat(3, 50px) 130px/ repeat(2, 280px);
+            justify-content: space-between;
+            row-gap: 10px;
+            column-gap: 25px;
+        }
+
+        input,
+        textarea {
+            padding: 0 30px 0 20px;
+
+            font-size: 14px;
+            line-height: 18px;
+            color: #3e3e3e;
+
+            border: 1px solid #9b9b9b;
+
+            &::placeholder {
+                font-size: 14px;
+                color: #9b9b9b;
+            }
+        }
+
+        textarea {
+            padding-top: 10px;
+
+            resize: none;
+        }
+    }
+
+    &__input-name,
+    &__input-select,
+    &__input-textarea {
+        grid-column: 1 / 3;
+    }
+    
+    .button_submit {
+        margin-top: 50px;
+    }
+}

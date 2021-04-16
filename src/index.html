@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a href="#" class="header__logo">
@@ -37,6 +38,51 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">МАГАЗИНЫ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">ЕДА</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">АКЦИИ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">УСЛУГИ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">СХЕМА ТЦ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">АРЕНДАТОРАМ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__item">
+                <img src="img/banner.png" alt="slide">
+            </div>
+            <div class="slider__item">
+                <img src="img/banner.png" alt="slide">
+            </div>
+            <div class="slider__item">
+                <img src="img/banner.png" alt="slide">
+            </div>
+        </div>
+
+        <div class="slider__dots">
+            <div class="dot dot_active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
     </section>
 
@@ -135,11 +181,20 @@
         <div class="container">
             <h2 class="title">Связаться с нами</h2>
             <div class="divider"></div>
-            <button class="button button_contacts">Отправить</button>
+            <form action="#" class="contacts__form">
+                <div class="contacts__form-wrapper">
+                    <input class="contacts__input-name" type="text" name="name" placeholder="Фамилия, имя, и отчество">
+                    <input class="contacts__input-phone" name="phone" placeholder="Телефон">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input class="contacts__input-select" type="select" name="select" placeholder="Выберете тему сообщения">
+                    <textarea class="contacts__input-textarea" name="text" id="text" placeholder="Текст сообщения"></textarea>
+                </div>
+                <button class="button button_submit">Отправить</button>
+            </form>
         </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <a href="#" class="footer__logo">
@@ -157,6 +212,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <div class="overlay">
+		<div class="modal" id="success">
+			<div class="modal__close">
+                <img src="icons/krestik.svg" alt="close">
+            </div>
+			<p class="modal__text">Сообщение успешно отправлено!</p>
+		</div>
+	</div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

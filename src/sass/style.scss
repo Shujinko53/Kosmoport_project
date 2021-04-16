@@ -1,16 +1,5 @@
 @import 'base/variables';
 
-@import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/info';
-@import 'blocks/about';
-@import 'blocks/shops';
-@import 'blocks/contacts';
-@import 'blocks/footer';
-@import 'blocks/media';
-@import 'blocks/title';
-@import 'blocks/buttons';
-
 * {
     font-family: 'Roboto', 'Arial', sans-serif;
 
@@ -23,7 +12,7 @@
 }
 
 .divider {
-    width: 65px;
+    width: 63px;
     height: 7px;
     margin: 0 auto;
 
@@ -33,3 +22,17 @@
 h2 {
     text-align: center;
 }
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/navigation';
+@import 'blocks/slider';
+@import 'blocks/info';
+@import 'blocks/about';
+@import 'blocks/shops';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/modal';
+@import 'blocks/media';

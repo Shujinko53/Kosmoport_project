@@ -1,0 +1,39 @@
+.nav {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    z-index: 5;
+
+    transform: translateX(-50%);
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        padding: 10px 0;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+
+        transition: 0.4s all;
+
+        &:hover, &:focus, &:active {
+            color: #d8d1ca;
+        }
+    }
+}
