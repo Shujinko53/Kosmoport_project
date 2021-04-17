@@ -124,7 +124,17 @@
         }
     }
 
+    .slider {
+        &__item {
+            img {
+                height: 350px;
+                @include object-fit(cover, 30%);
+            }
+        }
+    }
+
     .nav {
+        display: none;
         &__link {
             font-size: 14px;
             line-height: 22px;
