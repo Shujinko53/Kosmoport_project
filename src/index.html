@@ -226,13 +226,18 @@
         <div class="container">
             <h2 class="title">Связаться с нами</h2>
             <div class="divider"></div>
-            <form action="#" class="contacts__form">
+            <form action="#" class="contacts__form" method="post">
                 <div class="contacts__form-wrapper">
-                    <input class="contacts__input-name" type="text" name="name" placeholder="Фамилия, имя, и отчество">
-                    <input class="contacts__input-phone" name="phone" placeholder="Телефон">
-                    <input type="email" name="email" placeholder="Электронная почта">
-                    <input class="contacts__input-select" type="select" name="select" placeholder="Выберете тему сообщения">
-                    <textarea class="contacts__input-textarea" name="text" id="text" placeholder="Текст сообщения"></textarea>
+                    <input class="contacts__input-name" type="text" name="name" placeholder="Фамилия, имя, и отчество" required>
+                    <input class="contacts__input-phone" name="phone" placeholder="Телефон" required>
+                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <select class="contacts__input-select" type="select" size="1" name="select" required>
+                        <option value="">Выберете тему сообщения</option>
+                        <option value="claim">Жалоба</option>
+                        <option value="cooperation">Сотрудничество</option>
+                        <option value="offer">Предложения</option>
+                    </select>
+                    <textarea class="contacts__input-textarea" name="text" id="text" placeholder="Текст сообщения" required></textarea>
                 </div>
                 <button class="button button_submit">Отправить</button>
             </form>
@@ -270,8 +275,10 @@
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

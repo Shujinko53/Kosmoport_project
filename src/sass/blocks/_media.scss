@@ -260,11 +260,47 @@
     .contacts {
         &__form {
             width: 540px;
-    
-            &-wrapper {
-                grid-template: repeat(3, 50px) 130px/ repeat(2, 260px);
-                column-gap: 20px;
+        }
+
+        input,
+        &__input-textarea,
+        &__input-select {
+            width: 100%;
+            padding: 0 30px 0 20px;
+
+            font-size: 14px;
+            line-height: 16px;
+            color: #3e3e3e;
+
+            border: 1px solid #9b9b9b;
+
+            &::placeholder {
+                font-size: 14px;
+                color: #9b9b9b;
             }
+        }
+
+        input,
+        &__input-select {
+            margin-bottom: 10px;
+            height: 50px;
+
+            &[name=phone],
+            &[type=email] {
+                width: 100%;
+            }
+
+            &[name=phone] {
+                margin-right: 0;
+            }
+        }
+
+        &__input-textarea {
+            padding-top: 10px;
+
+            height: 130px;
+
+            resize: none;
         }
     }
 
@@ -389,19 +425,10 @@
         &__form {
             width: 100%;
             margin: 30px auto 0 auto;
-    
-            &-wrapper {
-                grid-template: repeat(4, 50px) 130px/ 1fr;
-                justify-content: center;
-                row-gap: 15px;
-                column-gap: unset;
-            }
         }
-    
-        &__input-name,
-        &__input-select,
+
         &__input-textarea {
-            grid-column: 1;
+            height: 150px;
         }
         
         .button_submit {
