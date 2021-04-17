@@ -2,6 +2,22 @@
     .container {
         max-width: 960px;
     }
+
+    .shops {
+        .slick-prev,
+        .slick-next {
+            top: -43%;
+        }
+    
+    
+        .slick-prev {
+            right: 8%;
+        }
+    
+        .slick-next {
+            right: 3%;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -71,6 +87,27 @@
                 line-height: 20px;
                 color: #3e3e3e;
             }
+        }
+    }
+
+    .shops {
+        .swiper {
+            &__item {
+                width: 240px;
+                height: 240px;
+            }
+        }
+
+        .slick-slide {
+            margin-right: 30px;
+        }
+
+        .slick-prev {
+            right: 9%;
+        }
+    
+        .slick-next {
+            right: 3%;
         }
     }
 
@@ -198,6 +235,28 @@
         }
     }
 
+    .shops {
+        .swiper {
+            &__item {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            top: -48%;
+        }
+
+        .slick-prev {
+            right: 11%;
+        }
+    
+        .slick-next {
+            right: 3%;
+        }
+    }
+
     .contacts {
         &__form {
             width: 540px;
@@ -302,6 +361,25 @@
         &__text {
             font-size: 14px;
             line-height: 20px;
+        }
+    }
+
+    .shops {
+        .slick-slide {
+            margin-right: 0;
+        }
+
+        .slick-prev,
+        .slick-next {
+            top: -20%;
+        }
+
+        .slick-prev {
+            right: 14%;
+        }
+    
+        .slick-next {
+            right: 3%;
         }
     }
 

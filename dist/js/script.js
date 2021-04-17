@@ -52,4 +52,6 @@ window.addEventListener('DOMContentLoaded', function() {
             menu.classList.toggle('nav_active');
         })
     });
+
+    // slider
 });
