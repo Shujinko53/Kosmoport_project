@@ -402,7 +402,14 @@
 
     .shops {
         .slick-slide {
-            margin-right: 0;
+            width: 200px;
+            height: 200px;
+
+            margin-right: 10px;
+
+            &:nth-child(n+1) {
+                margin-right: 0;
+            }
         }
 
         .slick-prev,
