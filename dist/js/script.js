@@ -34,4 +34,22 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // nav open/close
+
+    const menu = document.querySelector('.nav'),
+        menuItem = document.querySelectorAll('.nav_item'),
+        hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('nav_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('nav_active');
+        })
+    });
 });
