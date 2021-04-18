@@ -1,3 +1,3 @@
 # Kosmoport_project
 
-<a href="#">Опубликованная версия</a>
+<a href="https://shujinko53.github.io/Kosmoport_project/dist/">Опубликованная версия</a>
