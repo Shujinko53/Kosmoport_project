@@ -7,8 +7,8 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		swipeToSlide: true,
 		arrows: true,
-		prevArrow: '<button type="button" class="slick-prev"><img class="swiper__icon" src="../icons/slider/arrow-prev.svg"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img class="swiper__icon" src="../icons/slider/arrow-next.svg"></button>',
+		prevArrow: '<button type="button" class="slick-prev"><img class="swiper__icon" src="icons/slider/arrow-prev.svg"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img class="swiper__icon" src="icons/slider/arrow-next.svg"></button>',
 		responsive: [
 			{
 				breakpoint: 1200,
