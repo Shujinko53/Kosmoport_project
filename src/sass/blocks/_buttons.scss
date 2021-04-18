@@ -1,12 +1,15 @@
 .button {
-    display: block;
-    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
     height: 45px;
     margin: 0 auto;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
+    text-align: center;
     color: #fff;
 
     background-color: $main_color;

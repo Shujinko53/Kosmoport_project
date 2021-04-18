@@ -29,7 +29,13 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 568,
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 370,
 				settings: {
 					slidesToShow: 1
 				}

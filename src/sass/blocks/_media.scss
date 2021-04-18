@@ -406,10 +406,6 @@
             height: 200px;
 
             margin-right: 10px;
-
-            &:nth-child(n+1) {
-                margin-right: 0;
-            }
         }
 
         .slick-prev,
@@ -461,6 +457,17 @@
             margin-top: 20px;
 
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .shops {
+        .slick-slide {
+            width: 200px;
+            height: 200px;
+
+            margin-right: 5px;
         }
     }
 }

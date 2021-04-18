@@ -1,6 +1,7 @@
 const modalClose = document.querySelector('.modal__close');
 const overlay = document.querySelector('.overlay');
 const submitButton = document.querySelector('.button_submit');
+const select = document.querySelector('.contacts__input-select');
 
 const form = document.querySelector('.contacts__form');
 
@@ -9,6 +10,7 @@ let closeHandler = function (evt) {
 	overlay.style.display = 'none';
   };
 
+overlay.addEventListener('click', closeHandler);
 modalClose.addEventListener('click', closeHandler);
 
 window.addEventListener('keydown', function (evt) {
@@ -43,6 +45,7 @@ form.addEventListener('submit', function (evt) {
 			overlay.style.display = 'block';
 			// form.submit();
 			form.reset();
+			select.reset();
 			form.setAttribute('novalidate', true);
 		}
 });
