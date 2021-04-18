@@ -39,6 +39,8 @@
             transition: background-color 0.4s ease;
 
             cursor:pointer;
+
+            outline: none;
             
             &_active {
                 background-color: $main_color;
