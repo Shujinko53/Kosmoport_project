@@ -6,12 +6,6 @@
         margin: 40px auto 0 auto;
 
         &-wrapper {
-            // display: grid;
-            // grid-template: repeat(3, 50px) 130px/ repeat(2, 280px);
-            // justify-content: space-between;
-            // grid-auto-rows: 50px;
-            // row-gap: 10px;
-            // column-gap: 25px;
             display: flex;
             flex-wrap: wrap;
         }
@@ -30,8 +24,8 @@
     }
 
     input,
-    &__input-textarea,
-    &__input-select {
+    select,
+    textarea {
         width: 100%;
         padding: 0 30px 0 20px;
 
@@ -65,7 +59,7 @@
         }
     }
 
-    &__input-textarea {
+    textarea {
         padding-top: 10px;
 
         height: 130px;

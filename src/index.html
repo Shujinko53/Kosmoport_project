@@ -228,8 +228,8 @@
             <div class="divider"></div>
             <form action="#" class="contacts__form" method="post">
                 <div class="contacts__form-wrapper">
-                    <input class="contacts__input-name" id="name" type="text" name="name" placeholder="Фамилия, имя, и отчество" minlength="2" required>
-                    <input class="contacts__input-phone" name="phone" placeholder="Телефон" required>
+                    <input id="name" type="text" name="name" placeholder="Фамилия, имя, и отчество" minlength="2" required>
+                    <input name="phone" placeholder="Телефон" required>
                     <input type="email" name="email" placeholder="Электронная почта" required>
                     <div class="select">
                         <select class="contacts__input-select">
@@ -239,7 +239,7 @@
                             <option value="other">Другое</option>
                         </select>
                     </div>
-                    <textarea class="contacts__input-textarea" name="text" id="text" placeholder="Текст сообщения" minlength="5" required></textarea>
+                    <textarea name="text" id="text" placeholder="Текст сообщения" minlength="5" required></textarea>
                 </div>
                 <button class="button button_submit">Отправить</button>
             </form>

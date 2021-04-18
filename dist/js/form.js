@@ -1,7 +1,7 @@
 const modalClose = document.querySelector('.modal__close');
 const overlay = document.querySelector('.overlay');
 const submitButton = document.querySelector('.button_submit');
-const select = document.querySelector('.contacts__input-select');
+const input = document.querySelectorAll('input');
 
 const form = document.querySelector('.contacts__form');
 
@@ -34,8 +34,10 @@ form.addEventListener('submit', function (evt) {
 
 	if (!form.checkValidity()) {
 		setTimeout(function() {
+			
 			// Повторный вызов сабмита при включенной валидации покажет подсказки
 			submitButton.click();
+
 			// Временное отключение валидации для показа невалидных полей
 			form.setAttribute('novalidate', true);
 		}, 0);
@@ -43,9 +45,9 @@ form.addEventListener('submit', function (evt) {
 			form.removeAttribute('novalidate');
 			form.classList.remove('contacts__form_invalid');
 			overlay.style.display = 'block';
+
 			// form.submit();
 			form.reset();
-			select.reset();
 			form.setAttribute('novalidate', true);
 		}
 });
