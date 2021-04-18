@@ -410,7 +410,7 @@
 
         .slick-prev,
         .slick-next {
-            top: -20%;
+            top: -22%;
         }
 
         .slick-prev {
@@ -468,6 +468,22 @@
             height: 200px;
 
             margin-right: 5px;
+        }
+
+        .slick-prev {
+            right: 15%;
+        }
+    
+        .slick-next {
+            right: 3%;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .shops {
+        .slick-prev {
+            right: 17%;
         }
     }
 }
