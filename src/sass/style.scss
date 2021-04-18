@@ -24,11 +24,28 @@ h2 {
     text-align: center;
 }
 
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/navigation';
 @import 'blocks/slider';
-@import 'blocks/info';
+@import 'blocks/advantages';
 @import 'blocks/about';
 @import 'blocks/shops';
 @import 'blocks/contacts';
